@@ -1,4 +1,11 @@
-<div class="task">
-    <h3>{{task.text}} <span> X</span></h3>
+<div 
+    class="task"
+    [ngClass]="{reminder: task.reminder}"
+    (click) ="onToggle(task)"    
+>
+    <h3 class="text">{{task.text}} 
+    <span
+    (click)="onDelete(task)"
+    > X</span></h3>
     <p>{{task.day}}</p>
 </div>

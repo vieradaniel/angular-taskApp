@@ -4,3 +4,12 @@
     padding:1rem;
     cursor:pointer;
 }
+
+.reminder{
+    border-left: 0.5rem solid green;
+}
+
+.text{
+    display:flex;
+    justify-content:space-between;
+}
